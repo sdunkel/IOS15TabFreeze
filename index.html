@@ -157,7 +157,7 @@
       // Minimal app creating tons of draw calls.
       // In combination with Frame Buffer Objects seems to cause the Metal rendering system to queue up resources and fail eventually and freeze the Safari tab on IOS 15.
       // Dependening on vertex arrays or frame buffer objects the number of usable draw calls varies significantly and high numbers cause the issue to surface in real application scenarios.
-      // On multiple test devices the issue happens after 1.500.000 (Tested on IPhone 11, IPhone 13, IPhone 13 Pro Max, IPad Pro 11 2Gen). On some devices the tab crashes before.
+      // On multiple test devices the issue happens after 11.500.000 (Tested on IPhone 11, IPhone 13, IPhone 13 Pro Max, IPad Pro 11 2Gen). On some devices the tab crashes before.
       // On IOS 14 or with deactivated experimental Safari flag "WebGL via Metal" this does not happen. A workaround seems to be to flush the gl context.
       //
       // The following error messages show up in the console of the device:
